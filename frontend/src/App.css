@@ -1,0 +1,117 @@
+/* App.css */
+
+/* Reset some default styles */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color:lightblue
+}
+
+/* Main App Container */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Task Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="date"] {
+  width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Task Item Styling */
+.TaskItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.TaskItem span {
+  font-size: 1rem;
+  color: #333;
+}
+
+.TaskItem button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+.TaskItem button:hover {
+  background-color: #d32f2f;
+}
+
+/* Edit button styling */
+button.edit {
+  background-color: #FFC107;
+  color: white;
+}
+
+button.edit:hover {
+  background-color: #e0a800;
+}
+
+/* Task Form in Editing Mode */
+input[type="text"].editing {
+  background-color: #FFF9C4;
+  border-color: #FFEB3B;
+}
+
+/* General Styling */
+button {
+  font-size: 0.9rem;
+}
+
+input {
+  font-size: 1rem;
+}
+
